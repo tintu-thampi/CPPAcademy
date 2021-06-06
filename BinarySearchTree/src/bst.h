@@ -21,8 +21,7 @@ class BST
 
         Node* findMax(Node*, int&);
 
-        Node* remove(int, Node*); // xxx
-
+        Node* remove(int, Node*);
     
         Node* find(Node*, int, bool&);
 
