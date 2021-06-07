@@ -1,3 +1,6 @@
+#ifndef _RATIONAL_H_
+#define _RATIONAL_H_
+
 #include <iostream>
 
 class Rational
@@ -51,3 +54,5 @@ Rational operator*(int i,const Rational& r);
 
 Rational operator/(const Rational& r,int i);
 Rational operator/(int i,const Rational& r);
+
+#endif //_RATIONAL_H_
