@@ -29,9 +29,17 @@ Rational Rational::operator+(const Rational& other) const
     return Rational{numer * other.denom + denom * other.numer, denom * other.denom};
 }
 
-Rational Rational:: operator/(const Rational& other) const
+Rational Rational::operator/(const Rational& other) const
 {
     return Rational{numer * other.denom, denom * other.numer};
+}
+
+bool Rational::operator==(const Rational& other) const
+{
+    if (numer == other.numer && denom == other.denom)
+        return true;
+    else
+        return false;
 }
 
 Rational operator+(const Rational& r,int i)

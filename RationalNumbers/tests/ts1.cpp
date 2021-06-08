@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/rational.h"
+#include "rational.h"
 
 class RationalTest : public ::testing::Test {
     protected:
@@ -16,10 +16,9 @@ class RationalTest : public ::testing::Test {
         }
 };
 
-TEST_F(RationalTest, dummy) {
-    EXPECT_TRUE(true);
+TEST_F(RationalTest, testEquality) {
+    Rational r1{1};
+    Rational r2{1};
+    EXPECT_EQ(r1, r2);
 }
 
-TEST_F(RationalTest, dummy2) {
-    EXPECT_FALSE(false);
-}
